@@ -201,13 +201,28 @@ h2:after {
   background-image: url(../images/chat-ii.svg);
   background-position: center center;
   background-size: 35px;
-  background-repeat: no-repeat; }
+  background-repeat: no-repeat;
+  z-index: 1000000; }
 
 .chatbot-screen {
+  z-index: 100000000000000000000000;
   min-height: 100%;
+  min-width: 100%;
   background-color: #EE2E31;
   color: #0b0c10;
-  position: absolute; }
+  position: fixed;
+  display: none; }
+  .chatbot-screen * {
+    color: #0b0c10; }
+  .chatbot-screen h1 {
+    text-transform: none;
+    margin: 0;
+    padding: 0; }
+  .chatbot-screen .close {
+    cursor: pointer;
+    font-size: 3em;
+    padding-bottom: 0;
+    margin-bottom: 0; }
 
 /*******************
 *    Scrollbar
@@ -475,7 +490,11 @@ h2:after {
   .avatar {
     width: 50%; }
 
-  .footer, .right-footer {
+  .footer,
+  .right-footer {
+    text-align: center; }
+
+  .close {
     text-align: center; } }
 
 /*# sourceMappingURL=style.css.map */

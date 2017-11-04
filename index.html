@@ -85,26 +85,41 @@
 </head>
 
 <body>
-   
-   <!-- Chatbot
-   --------------------------------------->
+
+    <!-- Chatbot
+    --------------------------------------->
     <a href="#" class="chatbot">
         <div class="chatbot-icon"></div>
     </a>
 
     <div class="chatbot-screen">
-        Hello
+        <div class="row">
+            <div class="col-12 right close">
+                &times;
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-12 center">
+                    <h1>ChatBot</h1>
+                </div>
+            </div>
+        </div>
     </div>
 
     <script>
         $(document).ready(function() {
             $(".chatbot").click(function() {
+                $(".chatbot-screen").show(500);
+            });
 
+            $(".close").click(function() {
+                $(".chatbot-screen").hide(500);
             });
         });
     </script>
-    
-    
+
+
     <span id="top"></span>
     <!-- Landing Screen
     --------------------------------------->
