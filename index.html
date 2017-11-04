@@ -23,7 +23,7 @@
     --------------------------------------->
     <title>Dhruvik Neharia - Portfolio</title>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="viewport" content="width=device-width,initial-scale=1, user-scalable=no">
 
     <!-- SEO
     --------------------------------------->
@@ -85,6 +85,26 @@
 </head>
 
 <body>
+   
+   <!-- Chatbot
+   --------------------------------------->
+    <a href="#" class="chatbot">
+        <div class="chatbot-icon"></div>
+    </a>
+
+    <div class="chatbot-screen">
+        Hello
+    </div>
+
+    <script>
+        $(document).ready(function() {
+            $(".chatbot").click(function() {
+
+            });
+        });
+    </script>
+    
+    
     <span id="top"></span>
     <!-- Landing Screen
     --------------------------------------->
@@ -212,13 +232,21 @@
     </span>
 
     <div class="footer row">
-        <span class="col-12">
-        
-        Built using <a href="https://simplegrid.io" class="link-r">Simple Grid</a>, <a href="https://github.com/michalsnik/aos" class="link-r">AOS</a> and <i class="fa fa-coffee"></i>. &ensp; <i class="fa fa-copyright"></i> 2017 Dhruvik Neharia.
-        </span>
+        <div class="col-12">
+            <div class="row">
+                <div class="col-3">
+                    <i class="fa fa-copyright"></i> 2017 - Dhruvik Neharia
+                </div>
+                <div class="col-9 right-footer right">
+                    Built using <a href="https://simplegrid.io" class="link-r">Simple Grid</a>, <a href="https://github.com/michalsnik/aos" class="link-r">AOS</a> and <i class="fa fa-coffee"></i>.
+                </div>
+            </div>
+        </div>
     </div>
 
     <a href="#contact" class="hire" class="link">Contact</a>
+
+
 
     <!-- Navbar
     --------------------------------------->
