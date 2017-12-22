@@ -1,0 +1,83 @@
+$black: #0b0c10; //#0b0c10
+$white: #f8f8f8;
+$red: #EE2E31; // #66fcf1   #EE2E31  #f34a4a
+$dred: #F15456; // #77BBB8
+$grey: #1f2833;
+$lgrey: #E4E4E4;
+$fauna: 'Fauna One',
+serif;
+$robotoS: 'Roboto Slab',
+serif;
+$roboto: 'Roboto', sans-serif;
+
+* {
+    text-decoration: none;
+    font-weight: normal;
+}
+
+body {
+    color: $lgrey;
+    font-family: $fauna;
+    background-color: $black;
+}
+
+.jumbotron {
+    border-radius: 0;
+    color: $black;
+    background-color: $red;
+    font-family: $robotoS;
+    
+    h4 {
+        font-family: $roboto;
+    }
+    
+    h1 {
+        text-transform: uppercase;
+        white-space: nowrap;
+    }
+}
+
+@media only screen and (max-width: 500px)
+{
+    h1 {
+        font-size: 8vw;
+    }
+    .jumbotron {
+        text-align: center;
+        
+        h4 {
+            padding-top: 7px;
+            border-top: 1px solid $black;
+        }
+    }
+}
+
+
+/*******************
+*    Scrollbar
+*******************/
+
+::-webkit-scrollbar {
+    width: 7px;
+}
+
+::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+    background: $grey;
+}
+
+::-webkit-scrollbar-thumb {
+    background: $red;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: $dred;
+}
+
+::-webkit-scrollbar-thumb:window-inactive {
+    background: $dred;
+}
+
+::selection {
+    background-color: $dred;
+}
