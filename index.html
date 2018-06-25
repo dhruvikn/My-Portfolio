@@ -1,5 +1,4 @@
-<!---------------------------------------
-
+<!--
     Dhruvik Neharia
 
     © 2017 - All rights reserved
@@ -11,7 +10,7 @@
 
     Tailored in HTML (with emmet), SCSS and jQuery.
 
----------------------------------------->
+-->
 
 
 <!doctype html>
@@ -20,13 +19,13 @@
 
 <head>
     <!-- Basic Needs
-    --------------------------------------->
+    -->
     <title>Dhruvik Neharia - Portfolio</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1, user-scalable=no">
 
     <!-- SEO
-    --------------------------------------->
+    -->
     <meta name="Description" content="Portfolio of Dhruvik Neharia. I'm a student and developer based in Udaipur, Rajasthan.">
     <meta name="Keywords" content="Dhruvik, Neharia, Dhruvik Neharia, dhruvik neharia, dhruvikn, dhruvikneharia, dhruvik, neharia, dhruvik neharia udaipur, DhruvikN, portfolio, Portfolio, student, Student, website, Website, web-develop, web-development, front-end, HTML, CSS, Udaipur, Rajasthan, Techno India NJR, Engineer, Technology, website, github, apps, software, front, end, javascript, jquery, simplegrid, animations, scroll, git, github, bitbucket, Git, GitHub, india, bachelor of technology, b.tech">
     <meta name="author" content="Dhruvik Neharia">
@@ -54,41 +53,41 @@
     </script>
 
     <!-- Favicon and chrome theme color
-    --------------------------------------->
+    -->
     <meta name="theme-color" content="#EE2E31">
     <link rel="icon" href="images/icon.png?v=6">
 
     <!-- Font Awesome
-    --------------------------------------->
+    -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
     <!-- jQuery
-    --------------------------------------->
+    -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
     <!-- Simple Grid
-    --------------------------------------->
+    -->
     <link rel="stylesheet" href="css/simple-grid.min.css">
 
     <!-- Fonts
-    --------------------------------------->
+    -->
     <link href="https://fonts.googleapis.com/css?family=Fauna+One|Roboto+Slab" rel="stylesheet">
 
     <!-- AOS
-    --------------------------------------->
+    -->
     <link href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css" rel="stylesheet">
     <script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
 
     <!-- CSS
-    --------------------------------------->
+    -->
     <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
 
     <!-- Chatbot
-    --------------------------------------->
-    <a href="#" class="chatbot">
+    -->
+    <!-- <a href="#" class="chatbot">
         <div class="chatbot-icon"></div>
     </a>
 
@@ -105,15 +104,15 @@
                 </div>
             </div>
         </div>
-    </div>
+    </div> -->
 
     <script>
-        $(document).ready(function() {
-            $(".chatbot").click(function() {
+        $(document).ready(function () {
+            $(".chatbot").click(function () {
                 $(".chatbot-screen").show(500);
             });
 
-            $(".close").click(function() {
+            $(".close").click(function () {
                 $(".chatbot-screen").hide(500);
             });
         });
@@ -121,128 +120,155 @@
 
     <span id="top"></span>
     <!-- Landing Screen
-    --------------------------------------->
+    -->
     <span itemscope itemtype="http://schema.org/Person">
-    <div class="middle">
-        <div class="container middle-child">
-            <div class="row" data-aos="fade-up" data-aos-duration="2000">
-                <span itemprop="name"><h1 class="col-12 center">Dhruvik Neharia</h1></span>
-    <div class="row">
-        <h3 class="col-12 center">Front-End Web Developer</h3>
-    </div>
-    </div>
-    </div>
-    <a href="#profile">
-        <div class="scroll-down-dude"></div>
-    </a>
-    </div>
-
-    <!-- Profile Section
-   --------------------------------------->
-    <span id="profile"></span>
-    <div class="container section">
-        <div class="row">
-            <h2 data-aos="fade-right" class="col-12">Profile</h2>
-            <div class="row">
-                <span class="col-3 rh">
-                    <img src="./images/avatar.jpg" data-aos="zoom-in" class="iconh avatar">
-                </span>
-                <div class="col-9" data-aos="fade-right">
-                    <p>
-                        I'm a front-end web developer &amp; designer based in <a href="https://goo.gl/maps/VZj8Fbt3etS2" target="_blank" class="link-r">Udaipur, Rajasthan</a>. My work is focused on developing clean, sleek, creative and responsive web interfaces.
-                    </p>
-                    <p>
-                        I'm currently working as an intern at <a href="http://creatick.in" target="_blank" class="link-r">Creatick</a> but am also open to freelance projects.
-                    </p>
+        <div class="middle">
+            <div class="container middle-child">
+                <div class="row" data-aos="fade-up" data-aos-duration="2000">
+                    <span itemprop="name">
+                        <h1 class="col-12 center">Dhruvik Neharia</h1>
+                    </span>
+                    <div class="row">
+                        <h3 class="col-12 center">Front-End Web Developer</h3>
+                    </div>
                 </div>
-                <span class="col-3">
-                    <img src="./images/avatar.jpg" data-aos="zoom-in" class="icon avatar">
-                </span>
             </div>
+            <a href="#profile">
+                <div class="scroll-down-dude"></div>
+            </a>
         </div>
-    </div>
 
-    <!-- Skills Section
-   --------------------------------------->
-    <span id="skills"></span>
-    <div class="container section sec-skills">
-        <div class="row">
-            <h2 data-aos="fade-right" class="col-12">Skills</h2>
+        <!-- Profile Section
+   -->
+        <span id="profile"></span>
+        <div class="container section">
             <div class="row">
-                <div class="col-3 rh" data-aos="zoom-in">
-                    <img src="./images/coding.svg" class="iconh">
-                </div>
-                <div class="col-9" data-aos="fade-right">
-                    <p>
-                        My skills are my identity. I always try to keep them as sharp as possible.
-                        <br><br> You can know about them by looking at my <a href="https://drive.google.com/open?id=0B1OJmxgZ556MNi1rWXhSRWZERkE" target="_blank" class="link-r">Résumé</a>.
-                    </p>
-                </div>
-                <div class="col-3" data-aos="zoom-in">
-                    <img src="./images/coding.svg" class="icon">
+                <h2 data-aos="fade-right" class="col-12">Profile</h2>
+                <div class="row">
+                    <span class="col-3 rh">
+                        <img src="./images/avatar.jpg" data-aos="zoom-in" class="iconh avatar">
+                    </span>
+                    <div class="col-9" data-aos="fade-right">
+                        <p>
+                            I'm a front-end web developer &amp; designer based in
+                            <a href="https://goo.gl/maps/VZj8Fbt3etS2"
+                                target="_blank" class="link-r">Udaipur, Rajasthan</a>. My work is focused on developing clean, sleek, creative and responsive
+                            web interfaces.
+                        </p>
+                        <p>
+                            I'm currently working as an intern at
+                            <a href="http://creatick.in" target="_blank" class="link-r">Creatick</a> but am also open to freelance projects.
+                        </p>
+                    </div>
+                    <span class="col-3">
+                        <img src="./images/avatar.jpg" data-aos="zoom-in" class="icon avatar">
+                    </span>
                 </div>
             </div>
         </div>
-    </div>
 
-    <!-- Projects Section
-   --------------------------------------->
-    <span id="projects"></span>
-    <div class="container section sec-skills">
-        <div class="row">
-            <h2 data-aos="fade-right" class="col-12">Projects</h2>
+        <!-- Skills Section
+   -->
+        <span id="skills"></span>
+        <div class="container section sec-skills">
             <div class="row">
-                <div class="col-3 rh" data-aos="zoom-in">
-                    <img src="./images/idea.svg" class="iconh">
-                </div>
-                <div class="col-9" data-aos="fade-right">
-                    <p>
-                        I'm learning new technologies everyday and I try to create new possibilities with them every now and then. They can be viewed at <a href="http://apps.dhruvikneharia.in" class="link-r" target="_blank">apps.dhruvikneharia.in</a>.
-                        <br><br> Their source code is available at <i class="fa fa-github"></i> <a href="https://github.com/dhruvikn" target="_blank" class="link-r">Github</a>.
-                    </p>
-                </div>
-                <div class="col-3" data-aos="zoom-in">
-                    <img src="./images/idea.svg" class="icon">
+                <h2 data-aos="fade-right" class="col-12">Skills</h2>
+                <div class="row">
+                    <div class="col-3 rh" data-aos="zoom-in">
+                        <img src="./images/coding.svg" class="iconh">
+                    </div>
+                    <div class="col-9" data-aos="fade-right">
+                        <p>
+                            My skills are my identity. I always try to keep them as sharp as possible.
+                            <br>
+                            <br> You can know about them by looking at my
+                            <a href="https://drive.google.com/open?id=0B1OJmxgZ556MNi1rWXhSRWZERkE"
+                                target="_blank" class="link-r">Résumé</a>.
+                        </p>
+                    </div>
+                    <div class="col-3" data-aos="zoom-in">
+                        <img src="./images/coding.svg" class="icon">
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
 
-    <!-- Contact Section
-   --------------------------------------->
-    <span id="contact"></span>
-    <div class="container section c-skills">
-        <div class="row">
-            <h2 data-aos="fade-right" class="col-12">Contact</h2>
+        <!-- Projects Section
+   -->
+        <span id="projects"></span>
+        <div class="container section sec-skills">
             <div class="row">
-                <div class="col-3 rh" data-aos="zoom-in">
-                    <img src="./images/chat.svg" class="iconh">
-                </div>
-                <div class="col-9" data-aos="fade-right">
-                    <p>
-                        I'm intrested in freelance projects, remote work or just a nice conversation.
-                        <br><br> Feel free to ping me.
-                        <br><br>
-                        <i class="fa fa-envelope-o"></i>&ensp;
-                        <span itemprop="email"><a href="mailto:dhruvikn@gmail.com" class="link-r">dhruvikn@gmail.com</a></span>
-                        <br>
-                        <i class="fa fa-phone"></i>&ensp;
-                        <span itemprop="telephone"><a href="tel:+918952056393" class="link-r">+91 89520 56393</a></span>
-                        <br>
-                        <i class="fa fa-facebook-square"></i>&ensp; <a href="https://www.facebook.com/dhruvikn" class="link-r">dhruvikn</a>
-                        <br>
-                        <i class="fa fa-instagram"></i>&ensp; <a href="https://www.instagram.com/dhruvikn" class="link-r">dhruvikn</a>
-                        <br>
-                        <i class="fa fa-github-square"></i>&ensp; <a href="https://www.github.com/dhruvikn" class="link-r">dhruvikn</a>
-                        <br><br> And if you're in <a href="https://goo.gl/maps/VZj8Fbt3etS2" target="_blank" itemprop="address" itemscope itemtype="http://schema.org/PostalAddress" class="link-r">Udaipur</a>, <i class="fa fa-coffee"></i>'s on me.
-                    </p>
-                </div>
-                <div class="col-3" data-aos="zoom-in">
-                    <img src="./images/chat.svg" class="icon">
+                <h2 data-aos="fade-right" class="col-12">Projects</h2>
+                <div class="row">
+                    <div class="col-3 rh" data-aos="zoom-in">
+                        <img src="./images/idea.svg" class="iconh">
+                    </div>
+                    <div class="col-9" data-aos="fade-right">
+                        <p>
+                            I'm learning new technologies everyday and I try to create new possibilities with them every now and then. They can be viewed
+                            at
+                            <a href="http://apps.dhruvikneharia.in" class="link-r" target="_blank">apps.dhruvikneharia.in</a>.
+                            <br>
+                            <br> Their source code is available at
+                            <i class="fa fa-github"></i>
+                            <a href="https://github.com/dhruvikn" target="_blank" class="link-r">Github</a>.
+                        </p>
+                    </div>
+                    <div class="col-3" data-aos="zoom-in">
+                        <img src="./images/idea.svg" class="icon">
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
+
+        <!-- Contact Section
+   -->
+        <span id="contact"></span>
+        <div class="container section c-skills">
+            <div class="row">
+                <h2 data-aos="fade-right" class="col-12">Contact</h2>
+                <div class="row">
+                    <div class="col-3 rh" data-aos="zoom-in">
+                        <img src="./images/chat.svg" class="iconh">
+                    </div>
+                    <div class="col-9" data-aos="fade-right">
+                        <p>
+                            I'm intrested in freelance projects, remote work or just a nice conversation.
+                            <br>
+                            <br> Feel free to ping me.
+                            <br>
+                            <br>
+                            <i class="fa fa-envelope-o"></i>&ensp;
+                            <span itemprop="email">
+                                <a href="mailto:dhruvikn@gmail.com" class="link-r">dhruvikn@gmail.com</a>
+                            </span>
+                            <br>
+                            <i class="fa fa-phone"></i>&ensp;
+                            <span itemprop="telephone">
+                                <a href="tel:+918952056393" class="link-r">+91 89520 56393</a>
+                            </span>
+                            <br>
+                            <i class="fa fa-facebook-square"></i>&ensp;
+                            <a href="https://www.facebook.com/dhruvikn" class="link-r">dhruvikn</a>
+                            <br>
+                            <i class="fa fa-instagram"></i>&ensp;
+                            <a href="https://www.instagram.com/dhruvikn" class="link-r">dhruvikn</a>
+                            <br>
+                            <i class="fa fa-github-square"></i>&ensp;
+                            <a href="https://www.github.com/dhruvikn" class="link-r">dhruvikn</a>
+                            <br>
+                            <br> And if you're in
+                            <a href="https://goo.gl/maps/VZj8Fbt3etS2" target="_blank" itemprop="address"
+                                itemscope itemtype="http://schema.org/PostalAddress" class="link-r">Udaipur</a>,
+                            <i class="fa fa-coffee"></i>'s on me.
+                        </p>
+                    </div>
+                    <div class="col-3" data-aos="zoom-in">
+                        <img src="./images/chat.svg" class="icon">
+                    </div>
+                </div>
+            </div>
+        </div>
     </span>
 
     <div class="footer row">
@@ -252,7 +278,10 @@
                     <i class="fa fa-copyright"></i> 2017 - Dhruvik Neharia
                 </div>
                 <div class="col-9 right-footer right">
-                    Built using <a href="https://simplegrid.io" class="link-r">Simple Grid</a>, <a href="https://github.com/michalsnik/aos" class="link-r">AOS</a> and <i class="fa fa-coffee"></i>.
+                    Built using
+                    <a href="https://simplegrid.io" class="link-r">Simple Grid</a>,
+                    <a href="https://github.com/michalsnik/aos" class="link-r">AOS</a> and
+                    <i class="fa fa-coffee"></i>.
                 </div>
             </div>
         </div>
@@ -263,10 +292,10 @@
 
 
     <!-- Navbar
-    --------------------------------------->
+    -->
     <nav id="nav">
         <!--Desktop Nav
-        --------------------------------------->
+        -->
         <div class="desktop-nav">
             <ul>
                 <a href="#top">
@@ -285,14 +314,15 @@
         </div>
 
         <!-- Mobile Nav
-        --------------------------------------->
+        -->
         <div class="menu-icon">
             <div class="line-1 no-animation"></div>
             <div class="line-2 no-animation"></div>
             <div class="line-3 no-animation"></div>
         </div>
         <div class="mobile-nav">
-            <br><br>
+            <br>
+            <br>
             <ul>
                 <a href="#top" class="mobile-nav-item link">
                     <li>Home</li>
@@ -311,24 +341,24 @@
     </nav>
 
     <!-- Scripts
-    --------------------------------------->
+    -->
     <script>
         // Custom jQuery
-        $(document).ready(function() {
+        $(document).ready(function () {
             // Toggles the menu
-            $(".menu-icon").click(function() {
+            $(".menu-icon").click(function () {
                 $(".mobile-nav").slideToggle("slow");
             });
 
             // Hides the menu after clicking an item
-            $(".mobile-nav-item").click(function() {
+            $(".mobile-nav-item").click(function () {
                 $(".menu-icon").trigger('click');
                 $(".mobile-nav").slideUp("slow");
             });
         })
 
         // Hamburger
-        $('.menu-icon').bind('click', function() {
+        $('.menu-icon').bind('click', function () {
             $(this).toggleClass('active');
             $(this).find('div').removeClass('no-animation');
         });
@@ -343,7 +373,7 @@
         var header = $('.middle');
         var range = 200;
 
-        $(window).on('scroll', function() {
+        $(window).on('scroll', function () {
 
             var scrollTop = $(this).scrollTop(),
                 height = header.outerHeight(),
@@ -371,7 +401,7 @@
             // Remove links that don't actually link to anything
             .not('[href="#"]')
             .not('[href="#0"]')
-            .click(function(event) {
+            .click(function (event) {
                 // On-page links
                 if (
                     location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') &&
@@ -386,7 +416,7 @@
                         event.preventDefault();
                         $('html, body').animate({
                             scrollTop: target.offset().top
-                        }, 1000, function() {
+                        }, 1000, function () {
                             // Callback after animation
                             // Must change focus!
                             var $target = $(target);
@@ -403,9 +433,9 @@
             });
 
         // Sticky Nav
-        (function($) {
-            $(document).ready(function() {
-                $(window).scroll(function() {
+        (function ($) {
+            $(document).ready(function () {
+                $(window).scroll(function () {
                     if ($(this).scrollTop() > 50) {
                         $('#nav').fadeIn(500);
                     } else {
