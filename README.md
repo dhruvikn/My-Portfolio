@@ -4,7 +4,4 @@
 [![Developed By: Dhruvik Neharia](https://img.shields.io/badge/Developed%20By-Dhruvik%20Neharia-red.svg)](http://www.dhruvikneharia.in)
 
 
-
-[![forthebadge](http://forthebadge.com/images/badges/uses-html.svg)](http://forthebadge.com) [![forthebadge](http://forthebadge.com/images/badges/uses-css.svg)](http://forthebadge.com) [![forthebadge](http://forthebadge.com/images/badges/uses-js.svg)](http://forthebadge.com) [![forthebadge](http://forthebadge.com/images/badges/uses-git.svg)](http://forthebadge.com) [![forthebadge](http://forthebadge.com/images/badges/validated-html5.svg)](http://forthebadge.com)
-
-My own portfolio [www.dhruvikneharia.in](http://dhruvikneharia.in/).
+My portfolio <a href="https://dhruvikneharia.netlify.com" target="_blank">https://dhruvikneharia.netlify.com</a>
