@@ -1,6 +1,19 @@
 <html>
 
 <head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-98255924-2"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-98255924-2');
+    </script>
+    
     <title>404 - Dhruvik Neharia</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="https://fonts.googleapis.com/css?family=Fauna+One|Roboto+Slab|Roboto:100,400" rel="stylesheet">
@@ -15,17 +28,17 @@
             margin: 5vw 20vw;
             padding: 0;
         }
-        
+
         * {
             font-weight: 400;
         }
-        
+
         h1 {
             font-size: 4em;
             color: #EE2E31;
             font-family: 'Roboto Slab', serif;
         }
-        
+
         .video-container {
             position: relative;
             padding-bottom: 56.25%;
@@ -33,7 +46,7 @@
             height: 0;
             overflow: hidden;
         }
-        
+
         .video-container iframe,
         .video-container object,
         .video-container embed {
@@ -43,11 +56,12 @@
             width: 80%;
             height: 80%;
         }
-        
+
         @media only screen and (max-width: 500px) {
             body {
                 margin: 20vw 15vw;
             }
+
             .video-container iframe,
             .video-container object,
             .video-container embed {
@@ -58,16 +72,16 @@
                 height: 100%;
             }
         }
-        
-        a{
+
+        a {
             color: #EE2E31;
             text-decoration: none;
         }
-                
+
         .link {
             position: relative;
         }
-        
+
         .link:after {
             content: '';
             position: absolute;
@@ -80,35 +94,35 @@
             transition: width .5s ease;
             -webkit-transition: width .5s ease;
         }
-        
+
         .link:hover:after {
             width: 100%;
             left: 0;
             background: #EE2E31;
         }
-        
-         ::selection {
+
+        ::selection {
             background-color: #EE2E31;
         }
-        
-         ::-webkit-scrollbar {
+
+        ::-webkit-scrollbar {
             width: 10px;
         }
-        
-         ::-webkit-scrollbar-track {
+
+        ::-webkit-scrollbar-track {
             -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
             background: #EE2E31;
         }
-        
-         ::-webkit-scrollbar-thumb {
+
+        ::-webkit-scrollbar-thumb {
             background: #EE2E31;
         }
-        
-         ::-webkit-scrollbar-thumb:hover {
+
+        ::-webkit-scrollbar-thumb:hover {
             background: #EE2E31;
         }
-        
-         ::-webkit-scrollbar-thumb:window-inactive {
+
+        ::-webkit-scrollbar-thumb:window-inactive {
             background: #EE2E31;
         }
     </style>
