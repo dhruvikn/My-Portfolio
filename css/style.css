@@ -30,21 +30,19 @@ p {
   text-align: justify; }
 
 a {
-  color: #EE2E31; }
+  color: #bc814f; }
 
 body {
   color: #f8f8f8;
-  background-color: #0b0c10; }
+  background-color: #272524; }
 
 h1 {
-  color: #EE2E31;
+  color: #bc814f;
   font-family: "Roboto Slab", serif;
-  text-transform: uppercase;
   font-size: 4rem;
   font-weight: 100; }
 
 h3 {
-  text-transform: uppercase;
   font-size: 1rem;
   width: 100%;
   position: relative;
@@ -53,7 +51,7 @@ h3 {
 .footer {
   padding: 0em 0;
   font-size: 0.7em;
-  background-color: #060708;
+  background-color: #1d1b1b;
   text-align: left;
   width: 100%; }
   .footer * {
@@ -81,21 +79,22 @@ h3 {
   right: 0;
   margin: 20px;
   text-decoration: none;
-  color: #0b0c10;
-  background: #EE2E31;
+  color: #272524;
+  background: #bc814f;
   -webkit-transition: 0.5s ease;
   -o-transition: 0.5s ease;
   transition: 0.5s ease;
   font-family: "Roboto Slab", serif;
-  z-index: 99999;
-  opacity: 0.8; }
+  z-index: 99999; }
 
 .hire:hover {
-  opacity: 1; }
+  -webkit-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  transform: scale(1.1); }
 
 h2 {
   font-family: "Roboto Slab", serif;
-  color: #EE2E31;
+  color: #bc814f;
   width: 100%;
   position: relative;
   z-index: 1; }
@@ -103,7 +102,7 @@ h2 {
 h2:after {
   content: "";
   position: absolute;
-  border-top: 3px solid #EE2E31;
+  border-top: 3px solid #bc814f;
   left: 0;
   top: 0;
   height: 1px;
@@ -124,8 +123,9 @@ h2:after {
   position: fixed;
   top: 0px;
   width: 100%;
-  background-color: #EE2E31;
-  color: #0b0c10;
+  background-color: #272524;
+  color: #f8f8f8;
+  border-bottom: 2px solid #bc814f;
   z-index: 9999;
   display: none;
   padding: 1em; }
@@ -137,11 +137,14 @@ h2:after {
       list-style: none;
       margin: -20px; }
       #nav .mobile-nav ul a li {
-        color: #0b0c10;
+        color: #f8f8f8;
         opacity: 1; }
     #nav .mobile-nav li {
       padding: 20px 30px;
       margin: 10px 0; }
+
+.dn-nav {
+  color: #bc814f !important; }
 
 .desktop-nav ul {
   padding: 0;
@@ -150,7 +153,7 @@ h2:after {
   display: -ms-flexbox;
   display: flex; }
   .desktop-nav ul a li {
-    color: #0b0c10; }
+    color: #f8f8f8; }
   .desktop-nav ul li {
     padding: 0 1em; }
 
@@ -165,7 +168,7 @@ h2:after {
   display: block;
   margin-top: 5px;
   right: 0;
-  background: #0b0c10;
+  background: #bc814f;
   -o-transition: width .5s ease;
   transition: width .5s ease;
   -webkit-transition: width .5s ease; }
@@ -173,7 +176,7 @@ h2:after {
 .link:hover:after {
   width: 100%;
   left: 0;
-  background: #0b0c10; }
+  background: #bc814f; }
 
 .link-r {
   position: relative; }
@@ -186,7 +189,7 @@ h2:after {
   display: block;
   margin-top: -2px;
   right: 0;
-  background: #EE2E31;
+  background: #bc814f;
   -o-transition: width .5s ease;
   transition: width .5s ease;
   -webkit-transition: width .5s ease; }
@@ -194,10 +197,10 @@ h2:after {
 .link-r:hover:after {
   width: 100%;
   left: 0;
-  background: #EE2E31; }
+  background: #bc814f; }
 
 .chatbot-icon {
-  background-color: #EE2E31;
+  background-color: #bc814f;
   height: 60px;
   width: 60px;
   border-radius: 100%;
@@ -214,12 +217,12 @@ h2:after {
   z-index: 100000000000000000000000;
   min-height: 100%;
   min-width: 100%;
-  background-color: #EE2E31;
-  color: #0b0c10;
+  background-color: #bc814f;
+  color: #272524;
   position: fixed;
   display: none; }
   .chatbot-screen * {
-    color: #0b0c10; }
+    color: #272524; }
   .chatbot-screen h1 {
     text-transform: none;
     margin: 0;
@@ -241,19 +244,19 @@ h2:after {
   background: #1f2833; }
 
 ::-webkit-scrollbar-thumb {
-  background: #EE2E31; }
+  background: #bc814f; }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: #F15456; }
+  background: #94653c; }
 
 ::-webkit-scrollbar-thumb:window-inactive {
-  background: #F15456; }
+  background: #94653c; }
 
 ::-moz-selection {
-  background-color: #F15456; }
+  background-color: #94653c; }
 
 ::selection {
-  background-color: #F15456; }
+  background-color: #94653c; }
 
 /********************
 *    Background
@@ -261,7 +264,6 @@ h2:after {
 .middle {
   height: 100%;
   overflow: hidden;
-  background-image: url("../images/bg_small.jpg");
   background-position: bottom bottom;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -280,7 +282,6 @@ h2:after {
 
 @media only screen and (min-width: 500px) {
   .middle {
-    background-image: url("../images/bg_medium.jpg");
     background-position: center center;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -291,7 +292,6 @@ h2:after {
 
 @media only screen and (min-width: 800px) {
   .middle {
-    background-image: url("../images/bg.jpg");
     background-position: center center;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -318,8 +318,8 @@ h2:after {
   -webkit-transform: rotate(45deg);
   -ms-transform: rotate(45deg);
   transform: rotate(45deg);
-  border-bottom: 3px solid #EE2E31;
-  border-right: 3px solid #EE2E31; }
+  border-bottom: 3px solid #bc814f;
+  border-right: 3px solid #bc814f; }
 
 .scroll-down-dude:before {
   -webkit-animation: down-arrow-before 2.6s cubic-bezier(0.77, 0, 0.175, 1) infinite;
@@ -385,7 +385,7 @@ h2:after {
   .menu-icon .line-3 {
     height: 3px;
     width: 100%;
-    background-color: #0b0c10;
+    background-color: #272524;
     border-radius: 3px;
     -webkit-box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.3);
     box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.3);
@@ -405,11 +405,11 @@ h2:after {
   .menu-icon:hover .line-1,
   .menu-icon:hover .line-2,
   .menu-icon:hover .line-3 {
-    background-color: #0b0c10; }
+    background-color: #272524; }
   .menu-icon.active .line-1,
   .menu-icon.active .line-2,
   .menu-icon.active .line-3 {
-    background-color: #0b0c10; }
+    background-color: #272524; }
   .menu-icon.active .line-1 {
     -webkit-animation: animate-line-1 0.7s cubic-bezier(0.3, 1, 0.7, 1) forwards;
     animation: animate-line-1 0.7s cubic-bezier(0.3, 1, 0.7, 1) forwards; }
@@ -571,7 +571,7 @@ h2:after {
     content: "";
     position: absolute;
     border-top: 0;
-    border-bottom: 3px solid #EE2E31;
+    border-bottom: 3px solid #bc814f;
     left: 50%;
     top: 0;
     -webkit-transform: translate(-50%, -50%);
@@ -582,7 +582,8 @@ h2:after {
   .desktop-nav {
     display: none; }
   #nav {
-    padding: 2em; }
+    padding: 2em;
+    background-color: #bc814f; }
   .icon {
     display: none; }
   .iconh {

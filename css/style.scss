@@ -21,16 +21,17 @@
 ****************************************
 */
 
-$black: #0b0c10; //#0b0c10
+$black: #272524; //#0b0c10
 $white: #f8f8f8;
-$sky: #EE2E31; // #66fcf1   #EE2E31  #f34a4a
-$dsky: #F15456; // #77BBB8
+$sky: #bc814f; // #66fcf1   #EE2E31  #f34a4a
+$dsky: #94653c; // #77BBB8
 $grey: #1f2833;
 $lgrey: #E4E4E4;
 $fauna: 'Fauna One',
 serif;
 $robotoS: 'Roboto Slab',
 serif;
+
 * {
     font-weight: normal;
     font-family: $fauna;
@@ -54,13 +55,11 @@ body {
 h1 {
     color: $sky;
     font-family: $robotoS;
-    text-transform: uppercase;
     font-size: 4rem;
     font-weight: 100;
 }
 
 h3 {
-    text-transform: uppercase;
     font-size: 1rem;
     width: 100%;
     position: relative;
@@ -70,9 +69,10 @@ h3 {
 .footer {
     padding: 0em 0;
     font-size: 0.7em;
-    background-color: #060708;
+    background-color: #1d1b1b;
     text-align: left;
     width: 100%;
+
     * {
         color: $white;
     }
@@ -108,11 +108,10 @@ h3 {
     transition: 0.5s ease;
     font-family: $robotoS;
     z-index: 99999;
-    opacity: 0.8;
 }
 
 .hire:hover {
-    opacity: 1;
+    transform: scale(1.1);
 }
 
 h2 {
@@ -151,25 +150,30 @@ h2:after {
     position: fixed;
     top: 0px;
     width: 100%;
-    background-color: $sky;
-    color: $black;
+    background-color: $black;
+    color: $white;
+    border-bottom: 2px solid $sky;
     z-index: 9999;
     display: none;
     padding: 1em;
+
     .mobile-nav {
         display: none;
         height: 100vh;
+
         ul {
             padding: 0;
             list-style: none;
             margin: -20px;
+
             a {
                 li {
-                    color: $black;
+                    color: $white;
                     opacity: 1;
                 }
             }
         }
+
         li {
             padding: 20px 30px;
             margin: 10px 0;
@@ -177,16 +181,22 @@ h2:after {
     }
 }
 
+.dn-nav {
+    color: $sky !important;
+}
+
 .desktop-nav {
     ul {
         padding: 0;
         list-style: none;
         display: flex;
+
         a {
             li {
-                color: $black;
+                color: $white;
             }
         }
+
         li {
             padding: 0 1em;
         }
@@ -205,7 +215,7 @@ h2:after {
     display: block;
     margin-top: 5px;
     right: 0;
-    background: $black;
+    background: $sky;
     transition: width .5s ease;
     -webkit-transition: width .5s ease;
 }
@@ -213,7 +223,7 @@ h2:after {
 .link:hover:after {
     width: 100%;
     left: 0;
-    background: $black;
+    background: $sky;
 }
 
 .link-r {
@@ -320,7 +330,7 @@ h2:after {
 .middle {
     height: 100%;
     overflow: hidden;
-    background-image: url("../images/bg_small.jpg");
+    // background-image: url("../images/bg_small.jpg");
     background-position: bottom bottom;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -339,7 +349,7 @@ h2:after {
 
 @media only screen and (min-width: 500px) {
     .middle {
-        background-image: url('../images/bg_medium.jpg');
+        // background-image: url('../images/bg_medium.jpg');
         background-position: center center;
         background-repeat: no-repeat;
         background-attachment: fixed;
@@ -352,7 +362,7 @@ h2:after {
 
 @media only screen and (min-width: 800px) {
     .middle {
-        background-image: url('../images/bg.jpg');
+        // background-image: url('../images/bg.jpg');
         background-position: center center;
         background-repeat: no-repeat;
         background-attachment: fixed;
@@ -402,6 +412,7 @@ h2:after {
         -webkit-transform: rotate(45deg) translate(70%, 70%);
         transform: rotate(45deg) translate(70%, 70%);
     }
+
     100% {
         -webkit-transform: rotate(45deg) translate(70%, 70%);
         transform: rotate(45deg) translate(70%, 70%);
@@ -413,6 +424,7 @@ h2:after {
         -webkit-transform: rotate(45deg) translate(70%, 70%);
         transform: rotate(45deg) translate(70%, 70%);
     }
+
     100% {
         -webkit-transform: rotate(45deg) translate(70%, 70%);
         transform: rotate(45deg) translate(70%, 70%);
@@ -425,10 +437,12 @@ h2:after {
         transform: rotate(45deg) translate(110%, 110%);
         opacity: 0;
     }
+
     51% {
         -webkit-transform: rotate(45deg) translate(-130%, -130%);
         transform: rotate(45deg) translate(-130%, -130%);
     }
+
     100% {
         -webkit-transform: rotate(45deg) translate(-70%, -70%);
         transform: rotate(45deg) translate(-70%, -70%);
@@ -442,10 +456,12 @@ h2:after {
         transform: rotate(45deg) translate(110%, 110%);
         opacity: 0;
     }
+
     51% {
         -webkit-transform: rotate(45deg) translate(-130%, -130%);
         transform: rotate(45deg) translate(-130%, -130%);
     }
+
     100% {
         -webkit-transform: rotate(45deg) translate(-70%, -70%);
         transform: rotate(45deg) translate(-70%, -70%);
@@ -460,8 +476,8 @@ h2:after {
 
 $menu-icon-line-height: 3px;
 $menu-icon-line-space: 10px;
-$menu-icon-line-offsetY: $menu-icon-line-height + $menu-icon-line-space;
-$menu-icon-height: (3*$menu-icon-line-height) + (2*$menu-icon-line-space);
+$menu-icon-line-offsetY: $menu-icon-line-height+$menu-icon-line-space;
+$menu-icon-height: (3*$menu-icon-line-height)+(2*$menu-icon-line-space);
 $cubic-bezier-in: cubic-bezier(0.30,
 1,
 0.70,
@@ -470,12 +486,14 @@ $cubic-bezier-out: cubic-bezier(1,
 0.70,
 1,
 0.30);
+
 .menu-icon {
     width: 35px;
     height: $menu-icon-height;
     cursor: pointer;
     z-index: 50;
     margin-top: -8px;
+
     .line-1,
     .line-2,
     .line-3 {
@@ -486,35 +504,45 @@ $cubic-bezier-out: cubic-bezier(1,
         box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.3);
         transition: background-color .2s ease-in-out;
     }
+
     .line-1 {
         animation: animate-line-1-rev .7s ease-in-out;
     }
+
     .line-2 {
         margin: $menu-icon-line-space 0;
         animation: animate-line-2-rev .7s ease-in-out;
     }
+
     .line-3 {
         animation: animate-line-3-rev .7s ease-in-out;
     }
+
     &:hover {
+
         .line-1,
         .line-2,
         .line-3 {
             background-color: $black;
         }
     }
+
     &.active {
+
         .line-1,
         .line-2,
         .line-3 {
             background-color: $black;
         }
+
         .line-1 {
             animation: animate-line-1 .7s $cubic-bezier-in forwards;
         }
+
         .line-2 {
             animation: animate-line-2 .7s $cubic-bezier-in forwards;
         }
+
         .line-3 {
             animation: animate-line-3 .7s $cubic-bezier-in forwards;
         }
@@ -530,9 +558,11 @@ $cubic-bezier-out: cubic-bezier(1,
     0% {
         transform: translate3d(0, 0, 0) rotate(0deg);
     }
+
     50% {
         transform: translate3d(0, $menu-icon-line-offsetY, 0) rotate(0);
     }
+
     100% {
         transform: translate3d(0, $menu-icon-line-offsetY, 0) rotate(45deg);
     }
@@ -543,6 +573,7 @@ $cubic-bezier-out: cubic-bezier(1,
         transform: scale(1);
         opacity: 1;
     }
+
     100% {
         transform: scale(0);
         opacity: 0;
@@ -553,9 +584,11 @@ $cubic-bezier-out: cubic-bezier(1,
     0% {
         transform: translate3d(0, 0, 0) rotate(0deg);
     }
+
     50% {
         transform: translate3d(0, -$menu-icon-line-offsetY, 0) rotate(0);
     }
+
     100% {
         transform: translate3d(0, -$menu-icon-line-offsetY, 0) rotate(135deg);
     }
@@ -565,9 +598,11 @@ $cubic-bezier-out: cubic-bezier(1,
     0% {
         transform: translate3d(0, $menu-icon-line-offsetY, 0) rotate(45deg);
     }
+
     50% {
         transform: translate3d(0, $menu-icon-line-offsetY, 0) rotate(0);
     }
+
     100% {
         transform: translate3d(0, 0, 0) rotate(0deg);
     }
@@ -578,6 +613,7 @@ $cubic-bezier-out: cubic-bezier(1,
         transform: scale(0);
         opacity: 0;
     }
+
     100% {
         transform: scale(1);
         opacity: 1;
@@ -588,9 +624,11 @@ $cubic-bezier-out: cubic-bezier(1,
     0% {
         transform: translate3d(0, -$menu-icon-line-offsetY, 0) rotate(135deg);
     }
+
     50% {
         transform: translate3d(0, -$menu-icon-line-offsetY, 0) rotate(0);
     }
+
     100% {
         transform: translate3d(0, 0, 0) rotate(0deg);
     }
@@ -606,16 +644,20 @@ $cubic-bezier-out: cubic-bezier(1,
 }
 
 @media only screen and (max-width: 700px) {
+
     .menu-icon,
     .mobile-nav {
         display: block;
     }
+
     .rh {
         display: block;
     }
+
     h2 {
         text-align: center;
     }
+
     h2:after {
         content: "";
         position: absolute;
@@ -627,28 +669,37 @@ $cubic-bezier-out: cubic-bezier(1,
         height: 1px;
         width: 15%;
     }
+
     .desktop-nav {
         display: none;
     }
+
     #nav {
         padding: 2em;
+        background-color: $sky;
     }
+
     .icon {
         display: none;
     }
+
     .iconh {
         display: block;
     }
+
     .section {
         padding: 6em 0 20em 0;
         height: 25em;
     }
+
     .sec-skills {
         padding: 1em 0 0 0;
     }
+
     .avatar {
         width: 50%;
     }
+
     .footer,
     .right-footer {
         text-align: center;
